@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Registration</title>
+        <link rel="stylesheet" href="static/rec.css">
+        <script src="https://kit.fontawesome.com/d75cbd6376.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="cont">
+            <div class="formbox">
+               <u> <h1>what you like to hear</h1></u>
+                <form action="{{ url_for('rec') }}" method="post">
+                    <div class="ipg">
+                        <div class="ipf">
+                            <input id="username" name="username" type="text" placeholder="Enter Your Username" class="textbox"/>
+                        </div>
+                        <div class="ipf">
+                            <input id="recsong" name="recsong" type="text" placeholder="Enter Recomending song" class="textbox"/>
+                        </div>
+                        <div class="ipf">
+                            <input id="genre" name="genre" type="text" placeholder="Enter song genre" class="textbox"/>
+                        </div>
+                        
+  
+                    </div>
+                    <div class="btnf">
+                       <br><br><button type="submit" class="btn">Submit</button></br></br>
+                    </div>
+
+
+                </form>
+
+
+            </div>
+            
+        </div>
+
+    </body>
+</html>

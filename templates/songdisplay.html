@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MySQL Dat</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style5.css') }}">
+</head>
+<body>
+<h1>RECOMENDED SONGS</h1>
+  <table>
+    <tr>
+      <th>username</th>
+      <th>recomended song</th>
+      <th>genre</th>
+    </tr>
+    {% for row in song_data %}
+    <tr>
+      <td>{{ row[0] }}</td>
+      <td>{{ row[1] }}</td>
+      <td>{{ row[2] }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+
+</body>
+</html>
